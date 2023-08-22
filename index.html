@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zaitronics Repair Services</title>
+    <style>
+        /* Reset some default browser styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Lava lamp-style background */
+        body {
+            background: linear-gradient(to bottom, 
+                rgb(255, 0, 0),
+                rgb(0, 255, 0),
+                rgb(0, 0, 255),
+                rgb(255, 0, 0)
+            );
+            background-size: 100% 200%;
+            animation: background 15s infinite alternate;
+        }
+
+        @keyframes background {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 0% 100%; }
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #44444400;
+            color: #fefefe00;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Style for navigation links */
+        nav ul li a {
+            text-decoration: none; /* Remove underline */
+            color: #fff; /* Link text color */
+            font-size: 18px; /* Font size */
+            font-weight: bold; /* Font weight */
+            transition: color 0.3s; /* Smooth color transition on hover */
+        }
+
+        /* Hover effect for navigation links */
+        nav ul li a:hover {
+            color: #ff0000; /* Change color on hover */
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px; /* Adjusted padding to move content up */
+            background-color: rgba(255, 255, 255, 0.659);
+            border-radius: 20px;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+            position: relative; /* Add relative positioning */
+            margin-top: -20px; /* Adjusted margin-top to move content up */
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: center; /* Change text alignment to center */
+            color: #333; /* Text color for the main content */
+            font-size: 35px; /* Font size for the main content */
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 400px; /* Adjust the width of the slideshow */
+            text-align: center;
+            margin-top: 20px; /* Adjust the top margin to move it down */
+        }
+
+        /* Container on the left */
+        .left-container {
+            position: absolute;
+            left: 0;
+            top:600px; /* Adjust the top position to move it down */
+            width: calc(25% - 35px); /* Adjust the width */
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.659);
+            border-radius: 20px;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        /* Container on the right */
+        .right-container {
+            position: absolute;
+            right: 0;
+            top: 600px; /* Adjust the top position to move it down */
+            width: calc(25% - 35px); /* Adjust the width */
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.659);
+            border-radius: 20px;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        /* Hide all slides */
+        .mySlidesLeft, .mySlidesRight {
+            display: none;
+        }
+
+        /* Styling for the images */
+        .mySlidesLeft img, .mySlidesRight img {
+            width: 100%;
+        }
+
+        /* Sound control button */
+        #toggle-sound {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #33333314;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zaitronics Repair Services</h1>
+        <p>Your Trusted Electronics Repair Experts</p>
+        <p>"Site under Maintenence"</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="website.html">Home</a></li>
+            <li><a href="website-Services.html">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="left-container">
+        <div class="slideshow-container">
+            <div class="mySlidesLeft">
+                <img src="Images/Electronics.jpg" alt="Shop 1">
+            </div>
+            <div class="mySlidesLeft">
+                <img src="Images/electronics2.jpg" alt="Shop 1">
+            </div>
+            <div class="mySlidesLeft">
+                <img src="Images/electronics4.jpg" alt="Shop 1">
+            </div>
+        </div>
+        <!-- Add two pictures inside the left container -->
+        <img src="Images/ZRS.png" alt="Left Image 1" style="width: 100%; margin-top: 20px;">
+        <img src="Images/20230821_192359.jpg" alt="Left Image 2" style="width: 100%; margin-top: 20px;">
+        <img src="Images/20230821_192116.jpg" alt="Left Image 3" style="width: 100%; margin-top: 20px;">
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h2>Welcome to Zaitronics Repair Services</h2>
+            <p>We specialize in repairing a wide range of electronics, from smartphones to laptops and more. Our experienced technicians are here to help you with all your repair needs.</p>
+            <center></center>
+            <h3>Book Your Appointment With us Below</h3>
+        </div>
+        <!-- Start Square Appointments Embed Code --><script src='https://squareup.com/appointments/buyer/widget/wt55sf2ckfe183/LZJYSZS5YP0BS.js'></script><!-- End Square Appointments Embed Code -->
+        <center>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-d308d5fb-868b-43b2-837d-119dc50780b1"></div>
+    </div>
+    <div class="right-container">
+        <div class="slideshow-container">
+            <div class="mySlidesRight">
+                <img src="Images/20230120_133719.jpg" alt="Shop 1">
+            </div>        
+            <div class="slideshow-container">
+                <div class="mySlidesRight">
+                    <img src="Images/20230120_133856.jpg" alt="Shop 2">
+                </div>  
+            </div> 
+            
+        </div>
+        <!-- Add two pictures inside the right container -->
+        <img src="Images/unnamed.png" alt="Right Image 1" style="width: 100%; margin-top: 20px;">
+        <img src="Images/20230821_192250.jpg" alt="Right Image 2" style="width: 100%; margin-top: 20px;">
+        <img src="Images/20230821_192257.jpg" alt="Right Image 3" style="width: 100%; margin-top: 20px;">
+    </div>
+    <footer class="footer">
+        &copy; 2023 Zaitronics Repair Services. All rights reserved.
+    </footer>
+
+    <!-- Audio Element and JavaScript for Sound Control -->
+    <audio id="background-audio" autoplay loop>
+        <source src="Audio/relaxing-145038.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Sound control button -->
+    <button id="toggle-sound">Toggle Sound</button>
+
+    <!-- JavaScript for Slideshow Functionality -->
+    <script>
+        const audio = document.getElementById('background-audio');
+        const toggleButton = document.getElementById('toggle-sound');
+
+        toggleButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                toggleButton.textContent = 'Mute Sound';
+            } else {
+                audio.pause();
+                toggleButton.textContent = 'Play Sound';
+            }
+        });
+
+        let slideIndexLeft = 0; // Separate slideIndex for the left slideshow
+        let slideIndexRight = 0; // Separate slideIndex for the right slideshow
+
+        showSlidesLeft(); // Start left slideshow
+        showSlidesRight(); // Start right slideshow
+
+        function showSlidesLeft() {
+            let i;
+            const slides = document.querySelectorAll('.mySlidesLeft'); // Use a separate class for left slides
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+
+            slideIndexLeft++;
+
+            if (slideIndexLeft > slides.length) {
+                slideIndexLeft = 1;
+            }
+
+            slides[slideIndexLeft - 1].style.display = 'block';
+            setTimeout(showSlidesLeft, 2000); // Change left image every 2 seconds (adjust as needed)
+        }
+
+        function showSlidesRight() {
+            let i;
+            const slides = document.querySelectorAll('.mySlidesRight'); // Use a separate class for right slides
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+
+            slideIndexRight++;
+
+            if (slideIndexRight > slides.length) {
+                slideIndexRight = 1;
+            }
+
+            slides[slideIndexRight - 1].style.display = 'block';
+            setTimeout(showSlidesRight, 2000); // Change right image every 2 seconds (adjust as needed)
+        }
+    </script>
+</body>
+</html>
