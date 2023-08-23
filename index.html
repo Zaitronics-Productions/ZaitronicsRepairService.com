@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zaitronics Repair Services</title>
     <style>
         /* Reset some default browser styles */
@@ -61,50 +62,50 @@
 
         /* Style for navigation links */
         nav ul li a {
-            text-decoration: none; /* Remove underline */
-            color: #fff; /* Link text color */
-            font-size: 18px; /* Font size */
-            font-weight: bold; /* Font weight */
-            transition: color 0.3s; /* Smooth color transition on hover */
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
         }
 
         /* Hover effect for navigation links */
         nav ul li a:hover {
-            color: #ff0000; /* Change color on hover */
+            color: #ff0000;
         }
 
         /* Main content styles */
         .container {
             max-width: 650px;
             margin: 0 auto;
-            padding: 20px; /* Adjusted padding to move content up */
+            padding: 20px;
             background-color: rgba(255, 255, 255, 0.659);
             border-radius: 20px;
             box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
-            position: relative; /* Add relative positioning */
-            margin-top: -20px; /* Adjusted margin-top to move content up */
+            position: relative;
+            margin-top: -20px;
         }
 
         .main-content {
             padding: 20px;
-            text-align: center; /* Change text alignment to center */
-            color: #333; /* Text color for the main content */
-            font-size: 35px; /* Font size for the main content */
+            text-align: center;
+            color: #333;
+            font-size: 35px;
         }
 
         /* Slideshow container */
         .slideshow-container {
-            max-width: 400px; /* Adjust the width of the slideshow */
+            max-width: 400px;
             text-align: center;
-            margin-top: 20px; /* Adjust the top margin to move it down */
+            margin-top: 20px;
         }
 
         /* Container on the left */
         .left-container {
             position: absolute;
             left: 0;
-            top:600px; /* Adjust the top position to move it down */
-            width: calc(25% - 35px); /* Adjust the width */
+            top: 600px;
+            width: calc(25% - 35px);
             text-align: center;
             background-color: rgba(255, 255, 255, 0.659);
             border-radius: 20px;
@@ -116,8 +117,8 @@
         .right-container {
             position: absolute;
             right: 0;
-            top: 600px; /* Adjust the top position to move it down */
-            width: calc(25% - 35px); /* Adjust the width */
+            top: 600px;
+            width: calc(25% - 35px);
             text-align: center;
             background-color: rgba(255, 255, 255, 0.659);
             border-radius: 20px;
@@ -131,37 +132,56 @@
         }
 
         /* Styling for the images */
-        .mySlidesLeft img, .mySlidesRight img {
-            width: 100%;
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
-        /* Sound control button */
-        #toggle-sound {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            /* Adjust body background size */
+            body {
+                background-size: cover;
+            }
+
+            /* Adjust header styles */
+            header {
+                padding: 20px 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            /* Adjust navigation styles for smaller screens */
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            /* Adjust main content styles for smaller screens */
+            .main-content {
+                padding: 10px;
+                font-size: 24px;
+            }
+
+            /* Adjust the size and positioning of left and right containers */
+            .left-container, .right-container {
+                width: 100%;
+                position: relative;
+                top: 0;
+                margin-top: 20px;
+            }
         }
 
-        /* Footer styles */
-        .footer {
-            background-color: #33333314;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            clear: both;
-        }
+        /* Additional CSS for smaller screens can be added here */
     </style>
 </head>
 <body>
     <header>
         <h1>Zaitronics Repair Services</h1>
         <p>Your Trusted Electronics Repair Experts</p>
-        <p>"Site under Maintenence"</p>
+        <p>"Site under Maintenance"</p>
     </header>
     <nav>
         <ul>
@@ -193,24 +213,24 @@
             <h2>Welcome to Zaitronics Repair Services</h2>
             <p>We specialize in repairing a wide range of electronics, from smartphones to laptops and more. Our experienced technicians are here to help you with all your repair needs.</p>
             <center></center>
-            <h3>Book Your Appointment With us Below</h3>
+            <h3>Book Your Appointment With Us Below</h3>
         </div>
-        <!-- Start Square Appointments Embed Code --><script src='https://squareup.com/appointments/buyer/widget/wt55sf2ckfe183/LZJYSZS5YP0BS.js'></script><!-- End Square Appointments Embed Code -->
+        <!-- Start Square Appointments Embed Code -->
+        <script src='https://squareup.com/appointments/buyer/widget/wt55sf2ckfe183/LZJYSZS5YP0BS.js'></script>
+        <!-- End Square Appointments Embed Code -->
         <center>
-        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-d308d5fb-868b-43b2-837d-119dc50780b1"></div>
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-d308d5fb-868b-43b2-837d-119dc50780b1"></div>
+        </center>
     </div>
     <div class="right-container">
         <div class="slideshow-container">
             <div class="mySlidesRight">
                 <img src="Images/20230120_133719.jpg" alt="Shop 1">
-            </div>        
-            <div class="slideshow-container">
-                <div class="mySlidesRight">
-                    <img src="Images/20230120_133856.jpg" alt="Shop 2">
-                </div>  
-            </div> 
-            
+            </div>
+            <div class="mySlidesRight">
+                <img src="Images/20230120_133856.jpg" alt="Shop 2">
+            </div>
         </div>
         <!-- Add two pictures inside the right container -->
         <img src="Images/unnamed.png" alt="Right Image 1" style="width: 100%; margin-top: 20px;">
