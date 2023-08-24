@@ -27,14 +27,13 @@
             padding: 10px 0;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+        nav button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            margin: 0 10px;
+            cursor: pointer;
         }
 
         /* Main content styles */
@@ -81,6 +80,14 @@
             padding: 10px 0;
             clear: both;
         }
+
+        .footer button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -88,12 +95,10 @@
         <h1>Zaitronics Repair Services</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="website.html">Home</a></li>
-            <li><a href="website-Services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='website-Services.html'">Services</button>
+        <button onclick="window.location.href='AboutUs.html'">About Us</button>
+        <button onclick="window.location.href='ContactUs.html'">Contact</button>
     </nav>
     <div class="container">
         <div class="main-content">
@@ -140,6 +145,7 @@
     </div>
     <footer class="footer">
         &copy; 2023 Zaitronics Repair Services. All rights reserved.
+        <button onclick="window.location.href='index.html'">Back to Home</button>
     </footer>
 </body>
 </html>
