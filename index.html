@@ -4,27 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zaitronics Repair Services</title>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zaitronics Repair Services</title>
-    <style>
-        /* Your CSS styles */
-    </style>
-
-    <!-- JavaScript for Play Hover Sound -->
-    <script>
-        // Function to play the hover sound
-        function playHoverSound(soundNumber) {
-            // Define the audio element based on the sound number
-            const audio = soundNumber === 1 ? document.getElementById('hover-sound1') : document.getElementById('hover-sound2');
-            audio.volume = 0.05;
-            // Play the audio
-            audio.play();
-        }
-    </script>
-</head>
-
     <style>
         /* Reset some default browser styles */
         body, html {
@@ -69,7 +48,7 @@
             background-color: #44444400;
             color: #fefefe00;
             text-align: center;
-            padding: 50px 0;
+            padding: 20px 0;
         }
 
         nav ul {
@@ -98,18 +77,21 @@
 
         /* Main content styles */
         .container {
-            max-width: 650px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.659);
             border-radius: 20px;
             box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
             position: relative;
-            margin-top: -20px;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
         }
 
         .main-content {
-            padding: 20px;
+            grid-column: span 1;
             text-align: center;
             color: #333;
             font-size: 35px;
@@ -117,40 +99,9 @@
 
         /* Slideshow container */
         .slideshow-container {
-            max-width: 400px;
+            max-width: 100%;
             text-align: center;
             margin-top: 20px;
-        }
-
-        /* Container on the left */
-        .left-container {
-            position: absolute;
-            left: 0;
-            top: 600px;
-            width: calc(25% - 35px);
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.659);
-            border-radius: 20px;
-            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-        }
-
-        /* Container on the right */
-        .right-container {
-            position: absolute;
-            right: 0;
-            top: 600px;
-            width: calc(25% - 35px);
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.659);
-            border-radius: 20px;
-            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-        }
-
-        /* Hide all slides */
-        .mySlidesLeft, .mySlidesRight {
-            display: none;
         }
 
         /* Styling for the images */
@@ -188,45 +139,49 @@
             }
 
             /* Adjust the size and positioning of left and right containers */
-            .left-container, .right-container {
-                width: 100%;
-                position: relative;
-                top: 0;
-                margin-top: 20px;
+            .container {
+                grid-template-columns: 1fr;
             }
         }
 
         /* Additional CSS for smaller screens can be added here */
-        
+
         /* Center the sound button */
         .sound-button-container {
             text-align: center;
             position: fixed;
             bottom: 0;
             left: 0;
-            right:20;
-            margin-bottom: 20px; /* Adjust the margin as needed */
+            right: 0;
+            margin-bottom: 20px;
         }
 
         .sound-button-container button {
             padding: 5px 20px;
             font-size: 16px;
         }
-        .footer {
-    text-align: center;
-    background-color: #33333300;
-    color: #fff;
-    padding: 10px 0; /* Adjust the padding as needed */
-    position: calc();
-    bottom: 0;
-    width: 100%;
-}
 
+        .footer {
+            text-align: center;
+            background-color: #33333300;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+         .appointments-container{
+            text-align: center;
+            font-size:xx-large;
+            background-color: #33333300;
+            color:#fff;
+            
+         }
     </style>
 </head>
 <body>
     <header>
-        <video autoplay loop muted width="640" height="360" style="width: 100%; height: auto;" src="Videos/Microchip Technology Intro_1080p.mp4" poster="path_to_video_poster.jpg">
+        <video autoplay loop muted width="100%" style="max-width: 100%; height: auto;" src="Videos/Microchip Technology Intro_1080p.mp4" poster="path_to_video_poster.jpg">
             Your browser does not support the video tag.
         </video>
     </header>
@@ -237,37 +192,18 @@
             <li><a href="AboutUs.html" onmouseover="playHoverSound(1)">About Us</a></li>
             <li><a href="ContactUs.html" onmouseover="playHoverSound(2)">Contact</a></li>
         </ul>
-        
     </nav>
-    <div class="left-container">
-        <div class="slideshow-container">
-            <div class="mySlidesLeft">
-                <img src="Images/ZRS.png" alt="Shop 1">
-            </div>
-        </div>
-        <!-- Add two pictures inside the left container -->
-        <img src="Images/IMG_0048.JPG" alt="Left Image 1" style="width: 100%; margin-top: 20px;">
-        <img src="Images/IMG_0046.JPG" alt="Left Image 2" style="width: 100%; margin-top: 20px;">
-        <img src="Images/20230821_192116.jpg" alt="Left Image 3" style="width: 100%; margin-top: 20px;">
-        <img src="Images/Electronics.jpg" alt="Left Image 4" style="width: 100%; margin-top: 20px;">
-        <img src="Images/IMG_0044.JPG" alt="Left Image 5" style="width: 100%; margin-top: 20px;">
-        <img src="Images/IMG_0030.JPG" alt="Left Image 6" style="width: 100%; margin-top: 20px;">
-        <img src="Images/electronics4.jpg" alt="Left Image 7" style="width: 100%; margin-top: 20px;">
-    </div><!-- Images/IMG_0048.JPG -->
     <div class="container">
         <div class="main-content">
+            <h>Site Under Maintenance</h>
             <h2>Welcome to Zaitronics Repair Services</h2>
             <p>We specialize in repairing a wide range of electronics, from smartphones to laptops and more. Our experienced technicians are here to help you with all your repair needs.</p>
-            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100088578633871%2Fvideos%2F743879464172440%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-            <h4>We Recycle and Re-use Old Electronics Dont throw them out!</h4>
-            <p>Bring them to Us and we will dispose of them for Free. Our Mission is to lower E-Waste in our Town</p>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100088578633871%2Fvideos%2F743879464172440%2F&show_text=false&width=100%" width="100%" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            <h4>We Recycle and Re-use Old Electronics. Don't throw them out!</h4>
+            <p>Bring them to Us, and we will dispose of them for Free. Our Mission is to lower E-Waste in our Town</p>
             <img src="Images/Capture.png" alt="Left Image 8" style="width: 100%; margin-top: 20px;">
             <center></center>
-            <h3>Book Your Appointment With Us Below</h3>
         </div>
-        <!-- Start Square Appointments Embed Code -->
-        <script src='https://squareup.com/appointments/buyer/widget/wt55sf2ckfe183/LZJYSZS5YP0BS.js'></script>
-        <!-- End Square Appointments Embed Code -->
         <center>
             <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
             <div class="elfsight-app-d308d5fb-868b-43b2-837d-119dc50780b1"></div>
@@ -276,95 +212,84 @@
     <footer class="footer">
         &copy; 2023 Zaitronics Repair Services. All rights reserved.
     </footer>
-    
-    <div class="right-container">
-        <div class="slideshow-container">
-            <div class="mySlidesRight">
-                <img src="Images/unnamed.png" alt="Shop 1">
-        </div>
-        <!-- Add two pictures inside the right container -->
-        <img src="Images/20230120_133719.jpg" alt="Right Image 1" style="width: 100%; margin-top: 20px;">
-        <img src="Images/20230821_192250.jpg" alt="Right Image 2" style="width: 100%; margin-top: 20px;">
-        <img src="Images/20230120_133921.jpg" alt="Right Image 3" style="width: 100%; margin-top: 20px;">
-        <img src="Images/20230120_134047.jpg" alt="Right Image 4" style="width: 100%; margin-top: 20px;">
-        <img src="Images/20230120_133856.jpg" alt="Right Image 5" style="width: 100%; margin-top: 20px;">
-        <img src="Images/20230120_134036.jpg" alt="Right Image 6" style="width: 100%; margin-top: 20px;">
-        <img src="Images/20230120_134107.jpg" alt="Right Image 7" style="width: 100%; margin-top: 20px;">
-        <img src="Images/IMG_0006.JPG" alt="Right Image 8" style="width: 100%; margin-top: 20px;">
+    <div class="appointments-container">
+        <H4>Book Your Appointment With Us Today!</H4>
+        <!-- Start Square Appointments Embed Code -->
+        <script src='https://squareup.com/appointments/buyer/widget/wt55sf2ckfe183/LZJYSZS5YP0BS.js'></script>
+        <!-- End Square Appointments Embed Code -->
+    <!-- Audio Element and JavaScript for Sound Control -->
+    <audio id="background-audio" autoplay loop>
+        <source src="Audio/making-progress-dan-phillipson-main-version-02-56-10491.mp3" type="audio/mpeg">
+        <audio id="hover-sound1" src="Audio/flourish-spacey-1-86845.mp3"></audio>
+        <audio id="hover-sound2" src="Audio/flourish-spacey-1-86845.mp3"></audio>
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Container for the Toggle Sound button -->
+    <div class="sound-button-container">
+        <!-- Sound control button -->
+        <button id="toggle-sound">Toggle Sound</button>
     </div>
-   <!-- Audio Element and JavaScript for Sound Control -->
-<audio id="background-audio" autoplay loop>
-    <source src="Audio/making-progress-dan-phillipson-main-version-02-56-10491.mp3" type="audio/mpeg">
-    <audio id="hover-sound1" src="Audio/flourish-spacey-1-86845.mp3"></audio> 
-    <audio id="hover-sound2" src="Audio/flourish-spacey-1-86845.mp3"></audio>
-    Your browser does not support the audio element.
-</audio>
 
-<!-- Container for the Toggle Sound button -->
-<div class="sound-button-container">
-    <!-- Sound control button -->
-    <button id="toggle-sound">Toggle Sound</button>
-</div>
+    <!-- JavaScript for Sound Control -->
+    <script>
+        const audio = document.getElementById('background-audio');
+        const toggleButton = document.getElementById('toggle-sound');
 
-<!-- JavaScript for Sound Control -->
-<script>
-    const audio = document.getElementById('background-audio');
-    const toggleButton = document.getElementById('toggle-sound');
+        // Set the initial volume (0.5 is half volume, adjust as needed)
+        audio.volume = 0.008;
 
-    // Set the initial volume (0.5 is half volume, adjust as needed)
-    audio.volume = 0.008;
+        toggleButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                toggleButton.textContent = 'Mute Sound';
+            } else {
+                audio.pause();
+                toggleButton.textContent = 'Play Sound';
+            }
+        });
 
-    toggleButton.addEventListener('click', () => {
-        if (audio.paused) {
-            audio.play();
-            toggleButton.textContent = 'Mute Sound';
-        } else {
-            audio.pause();
-            toggleButton.textContent = 'Play Sound';
-        }
-    });
+        let slideIndexLeft = 0; // Separate slideIndex for the left slideshow
+        let slideIndexRight = 0; // Separate slideIndex for the right slideshow
 
-    let slideIndexLeft = 0; // Separate slideIndex for the left slideshow
-    let slideIndexRight = 0; // Separate slideIndex for the right slideshow
+        showSlidesLeft(); // Start left slideshow
+        showSlidesRight(); // Start right slideshow
 
-    showSlidesLeft(); // Start left slideshow
-    showSlidesRight(); // Start right slideshow
+        function showSlidesLeft() {
+            let i;
+            const slides = document.querySelectorAll('.mySlidesLeft'); // Use a separate class for left slides
 
-    function showSlidesLeft() {
-        let i;
-        const slides = document.querySelectorAll('.mySlidesLeft'); // Use a separate class for left slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
 
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = 'none';
+            slideIndexLeft++;
+
+            if (slideIndexLeft > slides.length) {
+                slideIndexLeft = 1;
+            }
+
+            slides[slideIndexLeft - 1].style.display = 'block';
+            setTimeout(showSlidesLeft, 2000); // Change left image every 2 seconds (adjust as needed)
         }
 
-        slideIndexLeft++;
+        function showSlidesRight() {
+            let i;
+            const slides = document.querySelectorAll('.mySlidesRight'); // Use a separate class for right slides
 
-        if (slideIndexLeft > slides.length) {
-            slideIndexLeft = 1;
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+
+            slideIndexRight++;
+
+            if (slideIndexRight > slides.length) {
+                slideIndexRight = 1;
+            }
+
+            slides[slideIndexRight - 1].style.display = 'block';
+            setTimeout(showSlidesRight, 2000); // Change right image every 2 seconds (adjust as needed)
         }
-
-        slides[slideIndexLeft - 1].style.display = 'block';
-        setTimeout(showSlidesLeft, 2000); // Change left image every 2 seconds (adjust as needed)
-    }
-
-    function showSlidesRight() {
-        let i;
-        const slides = document.querySelectorAll('.mySlidesRight'); // Use a separate class for right slides
-
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = 'none';
-        }
-
-        slideIndexRight++;
-
-        if (slideIndexRight > slides.length) {
-            slideIndexRight = 1;
-        }
-
-        slides[slideIndexRight - 1].style.display = 'block';
-        setTimeout(showSlidesRight, 2000); // Change right image every 2 seconds (adjust as needed)
-    }
-</script>
+    </script>
 </body>
 </html>
