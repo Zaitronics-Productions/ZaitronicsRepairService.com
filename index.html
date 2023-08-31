@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,7 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 40px 0;
+            padding: 20px 0; /* Reduce padding for smaller screens */
         }
 
         h1 {
@@ -45,10 +45,10 @@
 
         /* Navigation styles */
         nav {
-            background-color: #44444400;
-            color: #fefefe00;
+            background-color: #444;
+            color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 10px 0; /* Reduce padding for smaller screens */
         }
 
         nav ul {
@@ -57,8 +57,8 @@
         }
 
         nav ul li {
-            display: inline;
-            margin-right: 20px;
+            display: block; /* Display as blocks on smaller screens */
+            margin-bottom: 10px; /* Add margin for separation */
         }
 
         /* Style for navigation links */
@@ -80,21 +80,19 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.659);
+            background-color: rgba(255, 255, 255, 0.8); /* Improved readability */
             border-radius: 20px;
-            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
             position: relative;
             margin-top: 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 20px;
+            text-align: center; /* Center content on all screens */
         }
 
         .main-content {
-            grid-column: span 1;
             text-align: center;
             color: #333;
-            font-size: 35px;
+            font-size: 1.5rem; /* Smaller font size for readability */
+            line-height: 1.6; /* Improved line spacing */
         }
 
         /* Slideshow container */
@@ -119,7 +117,7 @@
 
             /* Adjust header styles */
             header {
-                padding: 20px 0;
+                padding: 10px 0; /* Reduce padding further for small screens */
             }
 
             h1 {
@@ -130,21 +128,20 @@
             nav ul li {
                 display: block;
                 margin-bottom: 10px;
+                margin-right: 0; /* Remove right margin */
             }
 
             /* Adjust main content styles for smaller screens */
             .main-content {
                 padding: 10px;
-                font-size: 24px;
+                font-size: 1.2rem;
             }
 
-            /* Adjust the size and positioning of left and right containers */
+            /* Adjust padding for containers */
             .container {
-                grid-template-columns: 1fr;
+                padding: 10px;
             }
         }
-
-        /* Additional CSS for smaller screens can be added here */
 
         /* Center the sound button */
         .sound-button-container {
@@ -154,6 +151,8 @@
             left: 0;
             right: 0;
             margin-bottom: 20px;
+            padding-bottom: 1%;
+            z-index: 100;
         }
 
         .sound-button-container button {
@@ -163,23 +162,127 @@
 
         .footer {
             text-align: center;
-            background-color: #33333300;
+            background-color: #333;
             color: #fff;
             padding: 10px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
+            z-index: 100;
         }
-         .appointments-container{
+
+        .appointments-container {
             text-align: center;
-            font-size:xx-large;
-            background-color: #33333300;
-            color:#fff;
+            margin:0 auto;
+            max-width: 80% ;
+
+            font-size: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.8); /* Improved readability */
+            color: #333;
+            padding-bottom: 10%;
+           
             
-         }
+        }
+
+        .Video-container {
+            max-width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 20px;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+            position: relative;
+            margin-top: 20px;
+            text-align: center;
+            height: 600px; /* Set the desired height */
+        }
+
+        .video-content {
+            flex-basis: 100%;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            /* Adjust the maximum height of the video container */
+            .Video-container {
+                max-height: 50vh; /* Adjust the maximum height as needed */
+            }
+
+            /* Center content within containers on smaller screens */
+            .container {
+                text-align: center;
+            }
+
+            .video-content {
+                text-align: center;
+            }
+        }
+        @media (min-width: 1440px) {
+            /* Adjust the maximum height of the video container */
+            .Video-container {
+                max-height: 120vh; /* Adjust the maximum height as needed */
+            }
+
+            /* Adjust the position of the appointments container */
+            .appointments-container {
+                margin-top: 20px; /* Add margin to create space between video and container */
+            }
+        }
+        @media (max-width: 768px) {
+    .reviews-container {
+        max-width: 90%; /* Adjust as needed for smaller screens */
+        margin: 20px auto; /* Center the container */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .reviews-container {
+        max-width: 70%; /* Adjust as needed for medium-sized screens */
+        margin: 20px auto; /* Center the container */
+    }
+}
+
+@media (min-width: 1441px) {
+    .reviews-container {
+        max-width: 50%; /* Adjust as needed for larger screens */
+        margin: 20px auto; /* Center the container */
+    }
+}
+        .overlay-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: 58%;
+            width: 60%;
+            height:auto;
+            z-index: 1; /* Ensure it appears above the video */
+        }
+        .overlay-image1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 58%;
+            width: 60%;
+            height:auto;
+            z-index: 1; /* Ensure it appears above the video */
+        }
+        .Review-container{
+             max-width: 1200px;
+             max-height: auto;
+             margin: 0 auto;
+            background-color: #ffffff6e;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+        }
     </style>
 </head>
 <body>
+    <div class="overlay-image">
+    <img src="Images/IMG_0043.png" alt="Overlay Image" class="overlay-image">
+</div>
+<div class="overlay-image1">
+    <img src="Images/unnamed.png" alt="Overlay Image1" class="overlay-image1">
+</div>
     <header>
         <video autoplay loop muted width="100%" style="max-width: 100%; height: auto;" src="Videos/Microchip Technology Intro_1080p.mp4" poster="path_to_video_poster.jpg">
             Your browser does not support the video tag.
@@ -195,28 +298,37 @@
     </nav>
     <div class="container">
         <div class="main-content">
-            <h>Site Under Maintenance</h>
-            <h2>Welcome to Zaitronics Repair Services</h2>
+            <h1>Site Under Maintenance</h1>
+            <h1>Welcome to Zaitronics Repair Services</h1>
             <p>We specialize in repairing a wide range of electronics, from smartphones to laptops and more. Our experienced technicians are here to help you with all your repair needs.</p>
-            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100088578633871%2Fvideos%2F743879464172440%2F&show_text=false&width=100%" width="100%" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-            <h4>We Recycle and Re-use Old Electronics. Don't throw them out!</h4>
-            <p>Bring them to Us, and we will dispose of them for Free. Our Mission is to lower E-Waste in our Town</p>
-            <img src="Images/Capture.png" alt="Left Image 8" style="width: 100%; margin-top: 20px;">
-            <center></center>
         </div>
-        <center>
-            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-            <div class="elfsight-app-d308d5fb-868b-43b2-837d-119dc50780b1"></div>
-        </center>
     </div>
-    <footer class="footer">
+    <div class="Video-container">
+        <div class="video-content" style="position: relative; padding-bottom: 56.25%;">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100088578633871%2Fvideos%2F743879464172440%2F&show_text=false&width=560&t=0" width="100%" height="100%" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none; overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+    </div>
+    <div class="Review-container">
+        <div class="review-content">
+            <center>
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div class="elfsight-app-d308d5fb-868b-43b2-837d-119dc50780b1"></div>
+            </center>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer">
         &copy; 2023 Zaitronics Repair Services. All rights reserved.
-    </footer>
+    </div>
     <div class="appointments-container">
-        <H4>Book Your Appointment With Us Today!</H4>
+        <h2>Book Your Appointment With Us Today!</h2>
         <!-- Start Square Appointments Embed Code -->
         <script src='https://squareup.com/appointments/buyer/widget/wt55sf2ckfe183/LZJYSZS5YP0BS.js'></script>
         <!-- End Square Appointments Embed Code -->
+    </div>
+
     <!-- Audio Element and JavaScript for Sound Control -->
     <audio id="background-audio" autoplay loop>
         <source src="Audio/making-progress-dan-phillipson-main-version-02-56-10491.mp3" type="audio/mpeg">
@@ -237,7 +349,7 @@
         const toggleButton = document.getElementById('toggle-sound');
 
         // Set the initial volume (0.5 is half volume, adjust as needed)
-        audio.volume = 0.008;
+        audio.volume = 0.009;
 
         toggleButton.addEventListener('click', () => {
             if (audio.paused) {
@@ -248,48 +360,6 @@
                 toggleButton.textContent = 'Play Sound';
             }
         });
-
-        let slideIndexLeft = 0; // Separate slideIndex for the left slideshow
-        let slideIndexRight = 0; // Separate slideIndex for the right slideshow
-
-        showSlidesLeft(); // Start left slideshow
-        showSlidesRight(); // Start right slideshow
-
-        function showSlidesLeft() {
-            let i;
-            const slides = document.querySelectorAll('.mySlidesLeft'); // Use a separate class for left slides
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-            }
-
-            slideIndexLeft++;
-
-            if (slideIndexLeft > slides.length) {
-                slideIndexLeft = 1;
-            }
-
-            slides[slideIndexLeft - 1].style.display = 'block';
-            setTimeout(showSlidesLeft, 2000); // Change left image every 2 seconds (adjust as needed)
-        }
-
-        function showSlidesRight() {
-            let i;
-            const slides = document.querySelectorAll('.mySlidesRight'); // Use a separate class for right slides
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-            }
-
-            slideIndexRight++;
-
-            if (slideIndexRight > slides.length) {
-                slideIndexRight = 1;
-            }
-
-            slides[slideIndexRight - 1].style.display = 'block';
-            setTimeout(showSlidesRight, 2000); // Change right image every 2 seconds (adjust as needed)
-        }
     </script>
 </body>
 </html>
