@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zaitronics Repair Services</title>
@@ -11,12 +12,11 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
-
         /* Lava lamp-style background */
         body {
             background: linear-gradient(to bottom, 
                 rgb(255, 255, 255),
-                rgb(1, 186, 1),
+                rgb(0, 0, 0),
                 rgb(255, 0, 0),
                 rgb(0, 0, 0),
                 rgb(255, 255, 255)
@@ -24,12 +24,10 @@
             background-size: 100% 200%;
             animation: background 15s infinite alternate;
         }
-
         @keyframes background {
             0% { background-position: 0% 0%; }
             100% { background-position: 0% 100%; }
         }
-
         /* Header styles */
         header {
             background-color: #333;
@@ -37,12 +35,10 @@
             text-align: center;
             padding: 20px 0; /* Reduce padding for smaller screens */
         }
-
         h1 {
             font-size: 3rem;
             margin-bottom: 10px;
         }
-
         /* Navigation styles */
         nav {
             background-color: #444;
@@ -50,7 +46,6 @@
             text-align: center;
             padding: 10px 0; /* Reduce padding for smaller screens */
         }
-
         /* Style for navigation links */
 nav ul {
     list-style: none;
@@ -58,12 +53,10 @@ nav ul {
     display: flex; /* Display the list items in a horizontal line */
     justify-content: center; /* Center the list horizontally */
 }
-
 /* Style for navigation links in the header */
 nav ul li {
     margin-right: 20px; /* Add spacing between the navigation items */
 }
-
 /* Adjust the padding and font size for navigation links */
 nav ul li a {
     text-decoration: none;
@@ -73,12 +66,10 @@ nav ul li a {
     padding: 10px 15px; /* Adjust padding for smaller screens */
     font-size: 16px;/* Add padding to the navigation buttons */
 }
-
 /* Hover effect for navigation links */
 nav ul li a:hover {
     color: #ff0000;
 }
-
         /* Main content styles */
         .container {
             max-width: 1200px;
@@ -91,43 +82,36 @@ nav ul li a:hover {
             margin-top: 20px;
             text-align: center; /* Center content on all screens */
         }
-
         .main-content {
             text-align: center;
             color: #333;
             font-size: 1.5rem; /* Smaller font size for readability */
             line-height: 1.6; /* Improved line spacing */
         }
-
         /* Slideshow container */
         .slideshow-container {
             max-width: 100%;
             text-align: center;
             margin-top: 20px;
         }
-
         /* Styling for the images */
         img {
             max-width: 100%;
             height: auto;
         }
-
         /* Media query for smaller screens */
         @media (max-width: 768px) {
             /* Adjust body background size */
             body {
                 background-size: cover;
             }
-
             /* Adjust header styles */
             header {
                 padding: 10px 0; /* Reduce padding further for small screens */
             }
-
             h1 {
                 font-size: 2rem;
             }
-
             /* Adjust navigation styles for smaller screens */
             nav ul li {
                 display: block;
@@ -138,20 +122,16 @@ nav ul li a:hover {
             padding: 8px 12px;
             font-size: 14px;
         }
-
-
             /* Adjust main content styles for smaller screens */
             .main-content {
                 padding: 10px;
                 font-size: 1.2rem;
             }
-
             /* Adjust padding for containers */
             .container {
                 padding: 10px;
             }
         }
-
         /* Center the sound button */
         .sound-button-container {
             text-align: center;
@@ -163,12 +143,10 @@ nav ul li a:hover {
             padding-bottom: 1%;
             z-index: 100;
         }
-
         .sound-button-container button {
             padding: 5px 20px;
             font-size: 16px;
         }
-
         .footer {
             text-align: center;
             background-color: #333;
@@ -179,12 +157,10 @@ nav ul li a:hover {
             width: 100%;
             z-index: 100;
         }
-
         .appointments-container {
             text-align: center;
             margin:0 auto;
             max-width: 80% ;
-
             font-size: 1.5rem;
             background-color: rgba(255, 255, 255, 0.8); /* Improved readability */
             color: #333;
@@ -192,7 +168,6 @@ nav ul li a:hover {
            
             
         }
-
         .Video-container {
             max-width: 70%;
             margin: 0 auto;
@@ -205,23 +180,90 @@ nav ul li a:hover {
             text-align: center;
             height: 600px; /* Set the desired height */
         }
-
         .video-content {
             flex-basis: 100%;
         }
-
+        @media (max-width: 320px) {
+            /* Adjust the maximum height of the video container */
+            .Video-container {
+                margin: auto;
+                height: auto; /* Adjust the maximum height as needed */
+            }
+            /* Center content within containers on smaller screens */
+            .container {
+                text-align: center;
+            }
+            .video-content {
+                text-align: center;
+            }
+        }
+        @media (max-width: 375px) {
+            /* Adjust the maximum height of the video container */
+            .Video-container {
+                margin: auto;
+                height: auto; /* Adjust the maximum height as needed */
+            }
+            /* Center content within containers on smaller screens */
+            .container {
+                text-align: center;
+            }
+            .video-content {
+                text-align: center;
+            }
+        }
+        @media (max-width: 425px) {
+            /* Adjust the maximum height of the video container */
+            .Video-container {
+                margin: auto;
+                height: auto; /* Adjust the maximum height as needed */
+            }
+            /* Center content within containers on smaller screens */
+            .container {
+                text-align: center;
+            }
+            .video-content {
+                text-align: center;
+            }
+        }
+        @media (max-width: 768px) {
+            /* Adjust the maximum height of the video container */
+            .Video-container {
+                margin: auto;
+                height: auto; /* Adjust the maximum height as needed */
+            }
+            /* Center content within containers on smaller screens */
+            .container {
+                text-align: center;
+            }
+            .video-content {
+                text-align: center;
+            }
+        }
+        @media (max-width: 1024px) {
+            /* Adjust the maximum height of the video container */
+            .Video-container {
+                margin: auto;
+                height: auto; /* Adjust the maximum height as needed */
+            }
+            /* Center content within containers on smaller screens */
+            .container {
+                text-align: center;
+            }
+            .video-content {
+                text-align: center;
+            }
+        }
+        
         /* Media query for smaller screens */
         @media (max-width: 768px) {
             /* Adjust the maximum height of the video container */
             .Video-container {
                 max-height: 50vh; /* Adjust the maximum height as needed */
             }
-
             /* Center content within containers on smaller screens */
             .container {
                 text-align: center;
             }
-
             .video-content {
                 text-align: center;
             }
@@ -229,9 +271,8 @@ nav ul li a:hover {
         @media (min-width: 1440px) {
             /* Adjust the maximum height of the video container */
             .Video-container {
-                max-height: 120vh; /* Adjust the maximum height as needed */
+                height: auto; /* Adjust the maximum height as needed */
             }
-
             /* Adjust the position of the appointments container */
             .appointments-container {
                 margin-top: 20px; /* Add margin to create space between video and container */
@@ -243,14 +284,12 @@ nav ul li a:hover {
         margin: 20px auto; /* Center the container */
     }
 }
-
 @media (min-width: 769px) and (max-width: 1440px) {
     .reviews-container {
         max-width: 70%; /* Adjust as needed for medium-sized screens */
         margin: 20px auto; /* Center the container */
     }
 }
-
 @media (min-width: 1441px) {
     .reviews-container {
         max-width: 50%; /* Adjust as needed for larger screens */
@@ -303,9 +342,8 @@ nav ul li a:hover {
             <li><a href="website-Services.html" onmouseover="playHoverSound(2)">Services</a></li>
             <li><a href="AboutUs.html" onmouseover="playHoverSound(1)">About Us</a></li>
             <li><a href="ContactUs.html" onmouseover="playHoverSound(2)">Contact</a></li>
-            <li><a href="https://zaitronics-repair-service-107361.square.site/s/shop" onmouseover="playHoverSound(2)">shop</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100088578633871" onmouseover="playHoverSound(2)">Facebook</a></li>
-            <li><a href="https://www.somersetbuildersclub.com/" onmouseover="playHoverSound(2)">BuildersClub</a></li>
+            <li><a href="Sho.html" onmouseover="playHoverSound(2)">Shop</a></li>
+            <li><a href="https://zaitronics-repair-service-107361.square.site/s/shop" onmouseover="playHoverSound(2)">Shop</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -320,6 +358,7 @@ nav ul li a:hover {
             <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100088578633871%2Fvideos%2F743879464172440%2F&show_text=false&width=560&t=0" width="100%" height="100%" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none; overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
         </div>
     </div>
+    
     <div class="Review-container">
         <div class="review-content">
             <center>
@@ -340,29 +379,24 @@ nav ul li a:hover {
         <script src='https://squareup.com/appointments/buyer/widget/wt55sf2ckfe183/LZJYSZS5YP0BS.js'></script>
         <!-- End Square Appointments Embed Code -->
     </div>
-
     <!-- Audio Element and JavaScript for Sound Control -->
     <audio id="background-audio" autoplay loop>
-        <source src="Audio/making-progress-dan-phillipson-main-version-02-56-10491.mp3" type="audio/mpeg">
+        <source src="Audio/slow-down-152501.mp3" type="audio/mpeg">
         <audio id="hover-sound1" src="Audio/flourish-spacey-1-86845.mp3"></audio>
         <audio id="hover-sound2" src="Audio/flourish-spacey-1-86845.mp3"></audio>
         Your browser does not support the audio element.
     </audio>
-
     <!-- Container for the Toggle Sound button -->
     <div class="sound-button-container">
         <!-- Sound control button -->
         <button id="toggle-sound">Toggle Sound</button>
     </div>
-
     <!-- JavaScript for Sound Control -->
     <script>
         const audio = document.getElementById('background-audio');
         const toggleButton = document.getElementById('toggle-sound');
-
         // Set the initial volume (0.5 is half volume, adjust as needed)
-        audio.volume = 0.009;
-
+        audio.volume = 0.2;
         toggleButton.addEventListener('click', () => {
             if (audio.paused) {
                 audio.play();
