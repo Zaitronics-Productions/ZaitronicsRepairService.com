@@ -88,6 +88,23 @@ nav ul li a:hover {
             font-size: 1.5rem; /* Smaller font size for readability */
             line-height: 1.6; /* Improved line spacing */
         }
+        .container2 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Improved readability */
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+            position: relative;
+            margin-top: 20px;
+            text-align: center; /* Center content on all screens */
+        }
+        .main-content2 {
+            text-align: center;
+            color: #333;
+            font-size: 1.5rem; /* Smaller font size for readability */
+            line-height: 1.6; /* Improved line spacing */
+        }
         /* Slideshow container */
         .slideshow-container {
             max-width: 100%;
@@ -328,6 +345,49 @@ nav ul li a:hover {
             border-radius: 20px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
         }
+        .slider-wrapper{
+            position: relative;
+            max-width: 48rem;
+            margin: auto;
+            padding-top: 3%;  
+
+        }
+        .slider{
+            display: flex;
+            aspect-ratio: 16 / 9;
+            overflow-x:auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+            border-radius: 0.5rem;
+        }
+        .slider img{
+            flex: 1 0 100%;
+            scroll-snap-align: start;
+            object-fit: cover;
+
+        }
+        .slider-nav{
+            display: flex;
+            column-gap: 1rem; 
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a{
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: 0.75;
+            transition: opacity ease 250ms;
+        }
+        .slider-nav a:hover{
+            opacity: 1;
+        }
+
     </style>
 </head>
 <body>
@@ -375,8 +435,49 @@ nav ul li a:hover {
             
         </div>
     </div>
-    
-    
+    <section class="slider-container">
+        <div class="slider-wrapper">
+         <div class="slider">
+            <img id="slide-1" src="Images/IMG_0048.JPG" alt="Zaitronics Owner"/>
+            <img id="slide-2" src="Images/Electronics.jpg" alt="Electronics"/>
+            <img id="slide-3" src="Images/electronics2.jpg" alt="Electronics"/>
+            <img id="slide-4" src="Images/electronics4.jpg" alt="Electronics"/>
+            <img id="slide-5" src="Images/IMG_0030.JPG" alt="Electronics"/>
+            <img id="slide-6" src="Images/IMG_0044.JPG" alt="Electronics"/>
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+                <a href="#slide-6"></a>
+            </div>  
+        </div>
+    </section>
+    <div class="container2">
+        <div class="main-content2">
+            <h1>We Offer Quality Repairs </h1>
+            <h1>At a Fair Price!</h1>
+            <p>We are dedicated to providing a comprehensive range of electronic services to meet your needs. Our expertise spans across these main areas:</p>
+            <h1>Cleaning, Maintaining, and Refurbishing Electronics:</h1>
+            <p>We understand the importance of keeping your electronic devices in optimal condition. Our skilled technicians are trained to clean, maintain, and refurbish a wide range of electronic devices, ensuring they operate at their best. Whether it's your smartphone, laptop, gaming console, or any other gadget, we have the knowledge and tools to extend their lifespan and enhance their performance.</p>
+            <h1>Additive Manufacturing with 3D Printing:</h1>
+            <p1>Our cutting-edge 3D printing capabilities open up a world of possibilities. We offer additive manufacturing services that allow you to bring your ideas to life. From prototypes and custom parts to intricate designs, our 3D printing services empower you to create, innovate, and solve complex problems with precision and efficiency.</p1>
+            <h1>Subscription Service for Electronics Care:</h1>
+            <p>For just $25 a month, our Electronics Care Subscription Service is designed to make your life easier and more convenient. With this subscription, you'll enjoy the following benefits:</p>
+            <h1>Device Fix and Clean:</h1>
+            <p>Any Eligible electronic device you own can be fixed and cleaned by our expert technicians at no additional cost as long as the Damage dosent result in needing a replacment device. Whether it's a software glitch, a hardware issue, or simply a thorough cleaning, we've got you covered.</p>
+            <h1>Free Screen Replacement for Phones:</h1>
+            <p>Accidents happen, and we're here to help. If you experience a cracked or damaged phone screen, our subscription service includes screen replacement at no extra charge. And to make it even Better We will come to you!. Your phone will be as good as new in no time.</p>
+        
+            <P>Our subscription service is designed to provide you with peace of mind, knowing that your electronic devices are covered, and any unexpected issues can be resolved quickly and efficiently.
+
+                Join our Electronics Care Subscription Service today and experience worry-free technology ownership.</P>
+
+                <h1>Interested Call 740-743-6277</h1>
+        </div>
+    </div>
     <div class="footer">
         &copy; 2023 Zaitronics Repair Services. All rights reserved.
     </div>
