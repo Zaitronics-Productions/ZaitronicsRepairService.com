@@ -118,9 +118,12 @@ nav ul li a:hover {
                 margin-bottom: 10px;
                 margin-right: 0; /* Remove right margin */
             }
+            nav ul{
+                display: list-item;
+            }
             nav ul li a {
             padding: 8px 12px;
-            font-size: 14px;
+            font-size: 10px;
         }
             /* Adjust main content styles for smaller screens */
             .main-content {
@@ -184,6 +187,9 @@ nav ul li a:hover {
             flex-basis: 100%;
         }
         @media (max-width: 320px) {
+            .nav ul li a {
+                font-size: 10px;
+            }
             /* Adjust the maximum height of the video container */
             .Video-container {
                 margin: auto;
