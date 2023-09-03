@@ -10,6 +10,22 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
+        /* Lava lamp-style background */
+        body {
+            background: linear-gradient(to bottom, 
+                rgb(255, 255, 255),
+                rgb(0, 0, 0),
+                rgb(255, 0, 0),
+                rgb(0, 0, 0),
+                rgb(255, 255, 255)
+            );
+            background-size: 100% 200%;
+            animation: background 15s infinite alternate;
+        }
+        @keyframes background {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 0% 100%; }
+        }
 
         /* Header styles */
         header {
@@ -99,6 +115,7 @@
         <button onclick="window.location.href='website-Services.html'">Services</button>
         <button onclick="window.location.href='AboutUs.html'">About Us</button>
         <button onclick="window.location.href='ContactUs.html'">Contact</button>
+        <button onclick="window.location.href='https://zaitronics-repair-service-107361.square.site/s/shop'"">Shop</button>
     </nav>
     <div class="container">
         <div class="main-content">
