@@ -7,11 +7,26 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
     <style>
         /* Additional inline CSS for this page */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        body, html {
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Lava lamp-style background */
+        body {
+            background: linear-gradient(to bottom, 
+                rgb(255, 255, 255),
+                rgb(0, 0, 0),
+                rgb(255, 0, 0),
+                rgb(0, 0, 0),
+                rgb(255, 255, 255)
+            );
+            background-size: 100% 200%;
+            animation: background 15s infinite alternate;
+        }
+        @keyframes background {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 0% 100%; }
         }
 
         header {
@@ -84,6 +99,7 @@
                 <li><a href="website-Services.html">Services</a></li>
                 <li><a href="AboutUs.html">About Us</a></li>
                 <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="https://zaitronics-repair-service-107361.square.site/s/shop" onmouseover="playHoverSound(2)">Shop</a></li>
             </ul>
         </nav>
     </header>
@@ -91,10 +107,10 @@
     <section class="about">
         <div class="about-content">
             <h1>About Zaitronics Repair Services</h1>
-            <p>Welcome to Zaitronics Repair Services, your trusted source for high-quality electronic device repair in Somerset, Ohio.</p>
+            <p>Welcome to Zaitronics Repair Services, your trusted source for high-quality electronic device repair services in Somerset, Ohio.</p>
             <p>With over 6 years of experience in the electronics repair industry, Isaiah Peck leads our dedicated team in delivering professional, reliable, and efficient repair solutions for a wide range of electronic devices, including smartphones, laptops, tablets, and more.</p>
             <p>At Zaitronics Repair Services, we prioritize customer satisfaction and technical excellence. Our mission is to get your devices back in optimal working condition, ensuring that you can stay connected to the digital world with confidence.</p>
-            <p>We Understand What Rule Your Devices Play in Your Everyday Life and Strive to get them back in your hands as soon as possible.
+            <p>We Understand What Rule Your Devices Play in Your Everyday Life and Strive to get them back in your hands as soon as possible.<p></p>
             <p>Visit us at our convenient location:</p>
             <address>
                 104 Public Square, Suite B<br>
